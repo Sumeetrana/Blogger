@@ -29,11 +29,11 @@ const userSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    hashedPassword: {
+    hashed_password: {
       type: String,
       required: true,
     },
-    salt: Number,
+    salt: String,
     about: String,
     role: {
       type: Number,

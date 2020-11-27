@@ -26,7 +26,7 @@ if ((process.env.NODE_ENV = "developement")) {
   app.use(cors({ origin: `${process.env.CLIENT_URL}` }));
 }
 
-gitapp.use("/api", blogRoutes);
+app.use("/api", blogRoutes);
 app.use("/api", authRoutes);
 
 const port = process.env.PORT || 8000;
